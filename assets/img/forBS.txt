@@ -1,0 +1,20 @@
+SELECT problem_solving
+      ,passionate_coding
+      ,eda 
+      ,python
+      ,ETL
+      ,data_mining
+      ,class_n_regress
+      ,robust_pipelines
+      ,image_classification
+      ,cast(hacking as text) as ethical
+      ,humor_n_others
+
+FROM self.main_db
+
+WHERE skillset in (SELECT Geospatial_Data_Analytics
+                         ,Business_Intelligence_n_Analytics
+                         ,Work_Experience
+                   FROM self.main_db)
+
+ORDER BY job_relevancy DESC;

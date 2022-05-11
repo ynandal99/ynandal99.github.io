@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta content="charset=utf-8">
+  <title>Netflix Group Project - YNandal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!-- Syntax Highlighter -->
+  <link href="css/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+  <!-- Demo CSS -->
+  <link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="../flexslider.css" type="text/css" media="screen" />
+
+  <!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+  <style type="text/css">
+    .flex-caption {
+      width: 96%;
+      padding: 2%;
+      left: 0;
+      bottom: 0;
+      background: rgba(229, 9, 20, 0.8);
+      color: #000;
+      font-size: 20px;
+      line-height: 18px;
+      font-weight: 600;
+    }
+
+    li.css a {
+      border-radius: 0;
+    }
+
+    .projectHeader {
+      font-family: Helvetica;
+      margin: 0 0 10px;
+      text-shadow: 0 1px 0 #010509;
+      color: #e50914;
+      font-size: 60px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .projectFooter {
+      font-family: Helvetica;
+      font-style: italic;
+      margin: 0 0 10px;
+      text-shadow: 0 1px 0 #010509;
+      color: #5a49d8;
+      font-size: 50px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .footerContent {
+      width: 96%;
+      padding: 2%;
+      left: 0;
+      bottom: 0;
+      background: rgba(229, 9, 20, 0.2);
+      color: #fff;
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    .projectContent {
+      width: 96%;
+      padding: 2%;
+      left: 0;
+      bottom: 0;
+      background: rgba(229, 9, 20, 0.2);
+      color: #fff;
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    .listContent {
+      width: 96%;
+      padding-left: 4%;
+      padding-bottom: 2%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(229, 9, 20, 0.2);
+      color: rgb(177, 238, 103);
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    @keyframes lineanim {
+      from {
+        background-color: yellow;
+        width: 0%;
+      }
+
+      to {
+        background-color: red;
+        width: 100%;
+      }
+    }
+
+    hr {
+      content: '';
+      width: 100%;
+      height: 4px;
+      display: block;
+      border: none;
+      background: rgb(219, 6, 6);
+      animation-name: lineanim;
+      animation-duration: 5s;
+      animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .projectDescription
+    {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),url("images/netflix.jpg");
+      background-repeat:no-repeat;
+      background-size: cover;
+      image-resolution: 1366x768;
+    }
+
+  </style>
+</head>
+
+<body class="loading">
+  <div id="container" class="cf projectDescription">
+    <hr>
+    <h1 class="projectHeader">Netflix Recommendation Engine</h1>
+    <hr>
+    <br>
+    <p class="projectContent"><strong>Do Netflix thumbnail suggestions vary by gender?</strong> <br> <br> This group
+      study was conducted by 20
+      students of the Business Intelligence & Analytics Class of 2021 where each participant tried to bring in as many
+      votes as possible (including
+      family members sharing the same Netflix account). <br> <br>
+      Key findings & statistics are given below: <em>(you can download the source file <a href="sheet/NetflixData.xlsx">
+          <strong style="color:rgb(134, 134, 215)"> <u>here</u></strong></a>.)</em>
+    </p>
+    <ul class="listContent">
+      <li>- Total Votes - 459 Male and 388 Female Votes</li>
+      <li>- Total Titles - 50</li>
+      <li>- 56% of Females were shown <em><strong>Intimate</strong></em> thumbnails compared with 37% Males in
+        'Romantic' titles</li>
+      <li>- 32% of Males were shown <em><strong>Ominous</strong></em> thumbnails compared with 26% Females across all
+        titles</li>
+    </ul>
+  </div>
+  <div id="container" class="cf">
+    <header role="navigation">
+      <h1>Only Mine</h1>
+      <h2></h2>
+      <h2> <strong>Genre</strong> - Thriller</h2>
+      <h2> <strong>Variety</strong> - 5</h2>
+    </header>
+
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="images/OnlyMine1.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">40%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">60%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/OnlyMine2.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">75%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">25%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/OnlyMine3.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/OnlyMine4.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">83%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">17%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/OnlyMine5.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">53%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">47%</b> <strong>Females</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="container" class="cf">
+    <header role="navigation">
+      <h1>Spenser Confidential</h1>
+      <h2></h2>
+      <h2> <strong>Genre</strong> - Exciting / Film Noir / Action Comedy</h2>
+      <h2> <strong>Variety</strong> - 6</h2>
+    </header>
+
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="images/SC1.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/SC2.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">50%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">50%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/SC3.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">80%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">20%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/SC4.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">25%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">75%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/SC5.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">60%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">40%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/SC6.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="container" class="cf">
+    <header role="navigation">
+      <h1>No One Gets Out Alive</h1>
+      <h2></h2>
+      <h2> <strong>Genre</strong> - Ominous / Psychological / Scary</h2>
+      <h2> <strong>Variety</strong> - 7</h2>
+    </header>
+
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="images/NO1.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/NO2.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/NO3.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/NO4.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">57%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">43%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/NO5.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">0%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">100%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/NO6.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">57%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">43%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/NO7.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">50%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">50%</b> <strong>Females</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="container" class="cf">
+    <header role="navigation">
+      <h1>Dirty Grandpa</h1>
+      <h2></h2>
+      <h2> <strong>Genre</strong> - Raunchy / Goofy / Comedy</h2>
+      <h2> <strong>Variety</strong> - 3</h2>
+    </header>
+
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="images/DG1.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/DG2.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">55%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">45%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/DG3.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="container" class="cf">
+    <header role="navigation">
+      <h1>Get Hard</h1>
+      <h2></h2>
+      <h2> <strong>Genre</strong> - Raunchy / Goofy / Comedy Duo</h2>
+      <h2> <strong>Variety</strong> - 5</h2>
+    </header>
+
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="images/GH1.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">40%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">60%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/GH2.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">75%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">25%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/GH3.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/GH4.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">83%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">17%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/GH5.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">53%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">47%</b> <strong>Females</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="container" class="cf">
+    <header role="navigation">
+      <h1>Lupin</h1>
+      <h2></h2>
+      <h2> <strong>Genre</strong> - Witty / Exciting / Mystery</h2>
+      <h2> <strong>Variety</strong> - 4</h2>
+    </header>
+
+    <div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+              <img src="images/Lupin1.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">100%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">0%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/Lupin2.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">0%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">100%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/Lupin3.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">43%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">57%</b> <strong>Females</strong>
+              </p>
+            </li>
+            <li>
+              <img src="images/Lupin4.png" />
+              <p class="flex-caption">This slide was recommended to <b style="color: blue;">67%</b>
+                <strong>Males</strong> and <b style="color: hotpink;">33%</b> <strong>Females</strong>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div id="container" class="cf">
+    <hr>
+    <h1 class="projectFooter">Citations & Resources:</h1>
+    <hr>
+    <br>
+    <p class="footerContent">
+      ---> For movie thumbnails and titles - <a href="https://www.netflix.com/ca/" target="_blank"
+        style="color: rgb(134, 134, 215);">
+        <strong> <u>Netflix</u></strong></a> <em>(accessed between April 1 - 15, 2022 multiple times).</em>
+      <br> <br>
+      ---> Slider template <a href="https://woocommerce.com/product-category/themes/" target="_blank">
+        <strong style="color:rgb(134, 134, 215)"> <u>Woocommerce</u></strong></a> <em> (accessed on April 14 2022).</em>
+        <br><br>
+        ---> Netflix background image <a href="https://www.pexels.com/photo/man-and-woman-sitting-on-a-couch-in-front-of-a-television-4009402/" target="_blank">
+          <strong style="color:rgb(134, 134, 215)"> <u>Pexels</u></strong></a> <em> (accessed on April 14 2022).</em>        
+        
+    </p>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="../jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function () {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function (slider) {
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+
+</body>
+
+</html>
